@@ -1,0 +1,40 @@
+[B]1.0.6[/B]
+- Updated all XXX-addons
+
+[B]1.0.5[/B]
+- Added Toggle for HalowTV Channels
+- Added SPORT1 Golf and Edge Sport
+
+[B]1.0.4[/B]
+- Added Commercial Dutch Channels (Thanks HalowTV)
+- Added SuperFavourite Generator
+- Select channels
+- Added update function for Veolo4K
+- XXX-toggle now configurable: 
+- Select addons
+- Use multiple profiles
+- Optionally SetString and/or ToggleSetting
+- Use builtin configurable password and/or profile lock
+- Added Korean XXX
+
+[B]1.0.3[/B]
+- Added custom xxx-toggle for CB
+- Added update function for XBMC voor beginners.
+- Added ePornik, RedTube and Wood Rocket to XXX-section
+- Fixed NPO channels
+
+[B]1.0.2[/B]
+- Now compatible (and required!) with XBMC voor beginners.
+- Added Tube8
+
+[B]1.0.1[/B]
+- Added XXX-update.
+- Simplified & improved XXX-functions.
+- Corrected several language strings.
+
+[B]1.0.0[/B]
+- Added all video and radio channels to the addon-part so all channels are now viewable from addon itself.
+- Added audio- and executable-provides so the addon will show up under programs as well as audio-addons.
+- Added XXX-toggle. When turned off, all xxx-addons and repos are deleted and SkinSetting "XXX" is reset. Enabling (requires a password) will copy them back.
+- Added SkinSettingRestore which will reset all skinsettings and disable XXX.
+- Added clear cache (3x). Clearing Addon- and All-Cache requires reboot (automatic)

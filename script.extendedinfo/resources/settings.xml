@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<settings>
+    <category label="32170">
+        <setting label="32171" type="labelenum" id="AddOrPlayMovie" values="play|add" default="play" />
+        <setting label="32172" type="bool" id="AutoAddMovie" default="true" enable="eq(-1,0)" />
+        <setting label="32189" type="select" id="LibraryAddonMovie" values="Genesis|iSTREAM|SALTS" default="Genesis" />
+        <setting label="32173" type="select" id="MainAddonMovie" values="Genesis|iSTREAM|SALTS|The Royal We|Pulsar|Phoenix|iSearch|Trailer" default="SALTS" />
+        <setting label="32174" type="select" id="AlternateAddonMovie" values="Genesis|iSTREAM|SALTS|The Royal We|Pulsar|Phoenix|1Channel|iSearch|Yify Movies HD|What the Furk" default="The Royal We" />
+        <setting label="32175" type="bool" id="AutoPlayAlternateMovie" default="true" />
+        <setting label="32176" type="labelenum" id="PulsarModeMovie" values="links|play" default="links" />
+    </category>
+    <category label="32177">
+        <setting label="32178" type="labelenum" id="AddOrPlayTVShow" values="play|add" default="play" />
+        <setting label="32179" type="bool" id="AutoAddTVShow" default="true" enable="eq(-1,0)"/>
+        <setting label="32190" type="select" id="LibraryAddonTVShow" values="Genesis|iSTREAM|SALTS" default="Genesis" />
+        <setting label="32180" type="select" id="MainAddonTVShow" values="Genesis|iSTREAM|SALTS|The Royal We|Pulsar|Phoenix|iSearch" default="SALTS" />
+        <setting label="32181" type="select" id="AlternateAddonTVShow" values="Genesis|iSTREAM|SALTS|The Royal We|Pulsar|1Channel|Phoenix|iSearch|TV4ME|What the Furk" default="The Royal We" />
+        <setting label="32182" type="bool" id="AutoPlayAlternateTVShow" default="true" />
+        <setting label="32183" type="labelenum" id="PulsarModeTVShow" values="links|play" default="links" />
+    </category>
+    <category label="128">
+        <setting label="32163" type="bool" id="infodialog_onclick" default="true"/>
+        <setting label="32005" type="bool" id="window_mode" default="false"/>
+        <setting label="32164" type="action" action="RunScript(script.extendedinfo,info=deletecache)"/>
+    </category>
+    <category label="TheMovieDB">
+        <setting label="32079" type="bool" id="alt_browser_layout"/>
+        <setting label="32080" type="bool" id="force_native_layout"/>
+        <setting label="32159" type="select" values="bg|cs|da|de|el|en|es|fi|fr|he|hr|hu|it|ja|ko|nl|no|pl|pt|ru|sl|sv|tr|zh" id="LanguageID" default="en"/>
+        <setting label="32160" type="text" id="tmdb_username" />
+        <setting label="32161" type="text" id="tmdb_password" option="hidden"/>
+        <setting label="32162" type="bool" id="include_adults"/>
+    </category>
+    <category label="32008">
+        <setting label="32004" type="select" values="google|youtube|local" id="autocomplete_provider" default="youtube"/>
+        <setting label="32003" visible="!eq(-1,local)" type="select" values="bg|cs|da|de|el|en|es|fi|fr|he|hr|hu|it|ja|ko|nl|no|pl|pt|ru|sl|sv|tr|zh" id="autocomplete_lang" default="en"/>
+        <setting label="32003" visible="eq(-2,local)" type="select" values="en|de|fr|nl" id="autocomplete_lang_local" default="en"/>
+    </category>
+</settings>

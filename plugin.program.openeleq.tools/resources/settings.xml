@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<settings>
+    <!--Options-->
+    <category label="30001">
+        <setting id="GEOIP" label="30202" type="bool" default="false" />
+		<setting id="UpdateName" type="text" label="30014" default="[COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR]" visible="true"/>
+		<setting id="UpdateFile" type="text" label="30015" default="http://archive.org/download/OpenELEQ/update.zip" visible="true"/>
+		<setting id="UpdateProfile" type="text" label="30016" default="" visible="true"/>
+        <setting id="ProfileLockUpdate" label="30331" type="bool" default="false" />
+		<setting id="Update" label="Update" type="action" action="RunScript(special://home/addons/plugin.program.openeleq.tools/resources/lib/update.py)" />
+        <setting id="HalowTV" label="Use HalowTV?" type="bool" default="false" />
+        <setting id="Playlist location" label="30203" type="folder" default="special://profile/playlists/video/" />
+		<setting id="Refresh Playlist" label="30204" type="action" action="RunPlugin(plugin://plugin.program.openeleq.tools/?mode=update)" />
+        <setting id="SuperFavourite location" label="30208" type="folder" default="special://profile/playlists/video/" />
+		<setting id="Refresh SuperFavourite " label="30209" type="action" action="RunPlugin(plugin://plugin.program.openeleq.tools/?mode=favour)" />
+		<setting id="Refresh EPG and PVR" label="30207" type="action" action="RunScript(special://home/addons/plugin.program.openeleq.tools/resources/lib/Settings.py)" visible="false" />
+		<setting id="Interval" label="Interval" type="number" default="86400" visible="false" />
+		<setting id="Clear System Cache" label="30011" type="action" action="RunScript(special://home/addons/plugin.program.openeleq.tools/resources/lib/cache.py,clearsystemcache)" />
+		<setting id="Clear All Cache" label="30010" type="action" action="RunScript(special://home/addons/plugin.program.openeleq.tools/resources/lib/cache.py,clearallcache)" />
+		<setting id="Clear Addon Cache" label="30012" type="action" action="RunScript(special://home/addons/plugin.program.openeleq.tools/resources/lib/cache.py,clearaddoncache)" />
+    </category>
+    <!--Video Channels-->
+    <category label="30002">
+        <setting id="NPO 1" label="30101" type="bool" default="true" />
+        <setting id="NPO 2" label="30102" type="bool" default="true" />
+        <setting id="NPO 3" label="30103" type="bool" default="true" />
+        <!--<setting id="RTL 4" label="RTL 4" type="bool" default="true" />
+        <setting id="RTL 5" label="RTL 5" type="bool" default="true" />
+        <setting id="RTL 7" label="RTL 7" type="bool" default="true" />
+        <setting id="RTL 8" label="RTL 8" type="bool" default="true" />
+        <setting id="NET 5" label="NET 5" type="bool" default="true" />
+        <setting id="SBS 6" label="SBS 6" type="bool" default="true" />
+        <setting id="SBS 9" label="SBS 9" type="bool" default="true" />
+        <setting id="HBO" label="HBO" type="bool" default="true" />
+        <setting id="HBO 2" label="HBO 2" type="bool" default="true" />
+        <setting id="HBO 3" label="HBO 3" type="bool" default="true" />
+        <setting id="FOX" label="FOX" type="bool" default="true" />
+        <setting id="FOX Life" label="FOX Life" type="bool" default="true" />
+        <setting id="FILM1 Spotlight" label="FILM1 Spotlight" type="bool" default="true" />
+        <setting id="FILM1 Premiere" label="FILM1 Premiere" type="bool" default="true" />
+        <setting id="FILM1 Comedy" label="FILM1 Comedy" type="bool" default="true" />
+        <setting id="FILM1 Action" label="FILM1 Action" type="bool" default="true" />
+        <setting id="SPORT1 Select" label="SPORT1 Select" type="bool" default="true" />
+        <setting id="SPORT1 Voetbal" label="SPORT1 Voetbal" type="bool" default="true" />
+        <setting id="FOX Sports 1" label="FOX Sports 1" type="bool" default="true" />
+        <setting id="FOX Sports 2" label="FOX Sports 2" type="bool" default="true" />
+        <setting id="FOX Sports 3" label="FOX Sports 3" type="bool" default="true" />
+        <setting id="FOX Sports 4" label="FOX Sports 4" type="bool" default="true" />
+        <setting id="FOX Sports 5" label="FOX Sports 5" type="bool" default="true" />
+        <setting id="BABY TV" label="BABY TV" type="bool" default="true" />
+        <setting id="Veronica" label="Veronica" type="bool" default="true" />
+        <setting id="AT 5" label="AT 5" type="bool" default="true" />
+        <setting id="GPTV" label="GPTV" type="bool" default="true" />
+        <setting id="N1" label="N1" type="bool" default="true" />
+        <setting id="RTVDrenthe" label="RTVDrenthe" type="bool" default="true" />
+        <setting id="Discovery" label="Discovery" type="bool" default="true" />
+        <setting id="Comedy Central" label="Comedy Central" type="bool" default="true" />
+        <setting id="24 Kitchen" label="24 Kitchen" type="bool" default="true" />-->
+        <setting id="101 TV" label="30104" type="bool" default="true" />
+        <setting id="Best 24" label="30105" type="bool" default="true" />
+        <setting id="Cultura 24" label="30106" type="bool" default="true" />
+        <setting id="Duurzaam 24" label="30107" type="bool" default="true" />
+        <setting id="Holland Doc 24" label="30108" type="bool" default="true" />
+        <setting id="Humor TV 24" label="30109" type="bool" default="true" />
+        <setting id="Journaal 24" label="30110" type="bool" default="true" />
+        <setting id="Politiek 24" label="30111" type="bool" default="true" />
+        <setting id="Zappelin" label="30112" type="bool" default="true" />
+        <setting id="RTV Noord" label="30113" type="bool" default="true" />
+        <setting id="RTV Oost" label="30114" type="bool" default="true" />
+        <setting id="RTV Utrecht" label="30115" type="bool" default="true" />
+        <setting id="UStad" label="30116" type="bool" default="true" />
+        <setting id="Omrop Fryslan" label="30117" type="bool" default="true" />
+        <setting id="OOG Radio TV" label="30118" type="bool" default="true" />
+        <setting id="Slingeland FM TV" label="30119" type="bool" default="true" />
+        <setting id="Weert FM TV" label="30120" type="bool" default="true" />
+        <setting id="3FM" label="30121" type="bool" default="true" />
+        <setting id="FunX" label="30122" type="bool" default="true" />
+        <setting id="Radio 1" label="30123" type="bool" default="true" />
+        <setting id="Radio 2" label="30124" type="bool" default="true" />
+        <setting id="Radio 538" label="30125" type="bool" default="true" />
+        <setting id="Slam TV" label="30126" type="bool" default="true" />
+        <setting id="FunX" label="30126" type="bool" default="true" />
+        <setting id="Radio 1" label="30127" type="bool" default="true" />
+        <setting id="Radio 2" label="30128" type="bool" default="true" />
+        <setting id="Depth_Acht" label="30129" type="slider" default="1" range="0,1,10" option="int" />
+        <setting id="Depth_Jeugd" label="30130" type="slider" default="1" range="0,1,10" option="int" />
+        <setting id="1HD" label="30131" type="bool" default="true" />
+        <setting id="AKA" label="30132" type="bool" default="true" />
+        <setting id="CapitalTV" label="30133" type="bool" default="true" />
+        <setting id="Cheerio" label="30134" type="bool" default="true" />
+        <setting id="DanceHD" label="30135" type="bool" default="true" />
+        <setting id="Djing DanceFloor" label="30136" type="bool" default="true" />
+        <setting id="Djing Hot" label="30137" type="bool" default="true" />
+        <setting id="Djing" label="30138" type="bool" default="true" />
+        <setting id="EskaBestMusic" label="30139" type="bool" default="true" />
+        <setting id="EskaRock" label="30140" type="bool" default="true" />
+        <setting id="EskaTV" label="30141" type="bool" default="true" />
+        <setting id="JazzHD" label="30142" type="bool" default="true" />
+        <setting id="KissTV" label="30143" type="bool" default="true" />
+        <setting id="LiveHD" label="30144" type="bool" default="true" />
+        <setting id="LiveMusic" label="30145" type="bool" default="true" />
+        <setting id="M6Music" label="30146" type="bool" default="true" />
+        <setting id="Mezzo" label="30147" type="bool" default="true" />
+        <setting id="Mi Musica" label="30148" type="bool" default="true" />
+        <setting id="MIX" label="30149" type="bool" default="true" />
+        <setting id="MTV Dance" label="30150" type="bool" default="true" />
+        <setting id="MTV Hits" label="30151" type="bool" default="true" />
+        <setting id="MTV Rocks" label="30152" type="bool" default="true" />
+        <setting id="MTVLiveHD" label="30153" type="bool" default="true" />
+        <setting id="NTWICM" label="30154" type="bool" default="true" />
+        <setting id="Omrop Fryslan" label="30155" type="bool" default="true" />
+        <setting id="OOG Radio TV" label="30156" type="bool" default="true" />
+        <setting id="PlanetPop" label="30157" type="bool" default="true" />
+        <setting id="PopHD" label="30158" type="bool" default="true" />
+        <setting id="Radio 538" label="30159" type="bool" default="true" />
+        <setting id="RockHD" label="30160" type="bool" default="true" />
+        <setting id="Slam TV" label="30161" type="bool" default="true" />
+        <setting id="Slingeland FM TV" label="30162" type="bool" default="true" />
+        <setting id="SportTimeTV" label="30163" type="bool" default="true" />
+        <setting id="TeleHit" label="30164" type="bool" default="true" />
+        <setting id="Tigo Music" label="30165" type="bool" default="true" />
+        <setting id="TraceUrban" label="30166" type="bool" default="true" />
+        <setting id="VevoTV1" label="30167" type="bool" default="true" />
+        <setting id="VevoTV2" label="30168" type="bool" default="true" />
+        <setting id="VevoTV3" label="30169" type="bool" default="true" />
+        <setting id="VH1" label="30170" type="bool" default="true" />
+        <setting id="VH1-Classic" label="30171" type="bool" default="true" />
+        <setting id="Virgin" label="30172" type="bool" default="true" />
+        <setting id="VoxMusicTV" label="30173" type="bool" default="true" />
+        <setting id="Weert FM TV" label="30174" type="bool" default="true" />
+        <setting id="EskaPartyTV" label="30175" type="bool" default="true" />
+    </category>
+    <!--Radio Channels-->
+    <category label="30003">
+        <setting id="3FM" label="30401" type="bool" default="true" />
+        <setting id="3FM Alternative" label="30402" type="bool" default="true" />
+        <setting id="3FM On Stage" label="30403" type="bool" default="true" />
+        <setting id="6 FM" label="30404" type="bool" default="true" />
+        <setting id="100% NL" label="30405" type="bool" default="true" />
+        <setting id="Accent FM" label="30406" type="bool" default="true" />
+        <setting id="Arrow Caz!" label="30407" type="bool" default="true" />
+        <setting id="Arrow Classic Rock" label="30408" type="bool" default="true" />
+        <setting id="Assen FM" label="30409" type="bool" default="true" />
+        <setting id="Beyond The Beat Generation" label="30410" type="bool" default="true" />
+        <setting id="Bright FM Kids" label="30411" type="bool" default="true" />
+        <setting id="Bright FM" label="30412" type="bool" default="true" />
+        <setting id="Classic FM" label="30413" type="bool" default="true" />
+        <setting id="Delta FM" label="30414" type="bool" default="true" />
+        <setting id="Dordrecht FM" label="30415" type="bool" default="true" />
+        <setting id="Dordrechtstad FM" label="30416" type="bool" default="true" />
+        <setting id="Falcon FM" label="30417" type="bool" default="true" />
+        <setting id="Groot Nieuws Radio" label="30418" type="bool" default="true" />
+        <setting id="Jouw FM" label="30419" type="bool" default="true" />
+        <setting id="Juize FM" label="30420" type="bool" default="true" />
+        <setting id="Keizerstad FM" label="30421" type="bool" default="true" />
+        <setting id="L1" label="30422" type="bool" default="true" />
+        <setting id="LekWaal FM" label="30423" type="bool" default="true" />
+        <setting id="M FM" label="30424" type="bool" default="true" />
+        <setting id="Maasland FM" label="30425" type="bool" default="true" />
+        <setting id="Nova Classic Rock" label="30426" type="bool" default="true" />
+        <setting id="Omroep Brabant" label="30426" type="bool" default="true" />
+        <setting id="Omroep Flevoland" label="30427" type="bool" default="true" />
+        <setting id="Omroep Groesbeek" label="30428" type="bool" default="true" />
+        <setting id="Omroep Landsmeer" label="30429" type="bool" default="true" />
+        <setting id="Omroep Reindonk" label="30430" type="bool" default="true" />
+        <setting id="Omroep Venray" label="30431" type="bool" default="true" />
+        <setting id="Omroep Zeeland" label="30432" type="bool" default="true" />
+        <setting id="Omroep Zuidplas" label="30433" type="bool" default="true" />
+        <setting id="Omrop Fryslan" label="30434" type="bool" default="true" />
+        <setting id="OOG Radio" label="30435" type="bool" default="true" />
+        <setting id="Optimaal FM" label="30436" type="bool" default="true" />
+        <setting id="Peel & Maas" label="30437" type="bool" default="true" />
+        <setting id="Pinguin Radio" label="30438" type="bool" default="true" />
+        <setting id="Q-music" label="30439" type="bool" default="true" />
+        <setting id="Radio 1" label="30440" type="bool" default="true" />
+        <setting id="Radio 2" label="30441" type="bool" default="true" />
+        <setting id="Radio 4" label="30442" type="bool" default="true" />
+        <setting id="Radio 5" label="30443" type="bool" default="true" />
+        <setting id="Radio 6" label="30444" type="bool" default="true" />
+        <setting id="Radio 8 FM" label="30445" type="bool" default="true" />
+        <setting id="Radio 10" label="30446" type="bool" default="true" />
+        <setting id="Radio 538" label="30447" type="bool" default="true" />
+        <setting id="Radio Almelo" label="30448" type="bool" default="true" />
+        <setting id="Radio Beverwijk" label="30449" type="bool" default="true" />
+        <setting id="Radio BNN" label="30450" type="bool" default="true" />
+        <setting id="Radio Capelle" label="30451" type="bool" default="true" />
+        <setting id="Radio Continu" label="30452" type="bool" default="true" />
+        <setting id="Radio Drenthe" label="30453" type="bool" default="true" />
+        <setting id="Radio Gelderland" label="30454" type="bool" default="true" />
+        <setting id="Radio Hengelo" label="30455" type="bool" default="true" />
+        <setting id="Radio Hoeksche Waard" label="30456" type="bool" default="true" />
+        <setting id="Radio Holland Online" label="30457" type="bool" default="true" />
+        <setting id="Radio Hoorn" label="30458" type="bool" default="true" />
+        <setting id="Radio Ideaal" label="30459" type="bool" default="true" />
+        <setting id="Radio Kontakt" label="30460" type="bool" default="true" />
+        <setting id="Radio M Utrecht" label="30461" type="bool" default="true" />
+        <setting id="Radio Maico" label="30462" type="bool" default="true" />
+        <setting id="Radio Noordoost Friesland" label="30463" type="bool" default="true" />
+        <setting id="Radio Nunspeet" label="30464" type="bool" default="true" />
+        <setting id="Radio Rijnmond" label="30465" type="bool" default="true" />
+        <setting id="Radio Schiedam" label="30466" type="bool" default="true" />
+        <setting id="Radio Slotstad" label="30467" type="bool" default="true" />
+        <setting id="Radio Veldhoven" label="30468" type="bool" default="true" />
+        <setting id="Radio West" label="30469" type="bool" default="true" />
+        <setting id="Radio Westerwolde" label="30470" type="bool" default="true" />
+        <setting id="Ram FM" label="30471" type="bool" default="true" />
+        <setting id="Reformatorische Omroep" label="30472" type="bool" default="true" />
+        <setting id="Seven FM" label="30473" type="bool" default="true" />
+        <setting id="Skyline FM" label="30474" type="bool" default="true" />
+        <setting id="Skyradio" label="30475" type="bool" default="true" />
+        <setting id="Slam! FM" label="30476" type="bool" default="true" />
+        <setting id="Slingeland FM" label="30477" type="bool" default="true" />
+        <setting id="Smart FM" label="30478" type="bool" default="true" />
+        <setting id="Smelne" label="30479" type="bool" default="true" />
+        <setting id="Studio Brussel" label="30480" type="bool" default="true" />
+        <setting id="Sublime FM" label="30481" type="bool" default="true" />
+        <setting id="Team FM" label="30482" type="bool" default="true" />
+        <setting id="Twente FM" label="30483" type="bool" default="true" />
+        <setting id="Urk FM Geestelijk" label="30484" type="bool" default="true" />
+        <setting id="Urk FM" label="30485" type="bool" default="true" />
+        <setting id="ValleiRadio" label="30486" type="bool" default="true" />
+        <setting id="Veluwe FM" label="30487" type="bool" default="true" />
+        <setting id="Veronica FM" label="30488" type="bool" default="true" />
+        <setting id="Waterstad FM" label="30489" type="bool" default="true" />
+        <setting id="Way FM" label="30490" type="bool" default="true" />
+        <setting id="Weert FM" label="30491" type="bool" default="true" />
+        <setting id="Wild FM" label="30492" type="bool" default="true" />
+        <setting id="Zaanradio" label="30493" type="bool" default="true" />
+    </category>
+    <!--XXX Addons-->
+    <category label="30004">
+        <setting id="3XZ" label="30901" type="bool" default="true" />
+        <setting id="Adult's Only HUB" label="30902" type="bool" default="true" />
+        <setting id="Beeg.com" label="30903" type="bool" default="true" />
+        <setting id="Cherry Pie" label="30904" type="bool" default="true" />
+        <setting id="Empflix" label="30905" type="bool" default="true" />
+        <setting id="ePornik" label="30906" type="bool" default="true" />
+        <setting id="Erotic Shark" label="30907" type="bool" default="true" />
+        <setting id="Erotik" label="30908" type="bool" default="true" />
+        <setting id="FantastiCC" label="30909" type="bool" default="true" />
+        <setting id="Kindgirls" label="30900" type="bool" default="true" />
+        <setting id="Korean XXX" label="30920" type="bool" default="true" />
+        <setting id="LubeTube" label="30910" type="bool" default="true" />
+        <setting id="Porn Hub" label="30911" type="bool" default="true" />
+        <setting id="RedTube" label="30912" type="bool" default="true" />
+        <setting id="Tube8" label="30913" type="bool" default="true" />
+        <setting id="Ultimate Whitecream" label="30914" type="bool" default="true" />
+        <setting id="VideoDevil" label="30915" type="bool" default="true" />
+        <setting id="Wood Rocket" label="30916" type="bool" default="true" />
+        <setting id="xHamster Gay" label="30917" type="bool" default="true" />
+        <setting id="YouJizz.com" label="30918" type="bool" default="true" />
+        <setting id="Youporn Gay" label="30919" type="bool" default="true" />
+	</category>
+    <!--Other-->
+    <category label="30005">
+		<setting id="xxx_password" label="30013" type="text" default="69" visible="false" />
+        <setting id="localpassword" label="30330" type="bool" default="true" />
+        <setting id="profilelock" label="30331" type="bool" default="false" />
+		<setting id="togglesetting" label="30332" type="text" default="XXX" visible="true" />
+		<setting id="setstringon" label="30333" type="text" default="Custom1HomeItem.Disable," visible="true" />
+		<setting id="setstringoff" label="30334" type="text" default="Custom1HomeItem.Disable,True" visible="true" />
+		<setting id="dirtyprofile" label="30328" type="text" default="Master user" visible="true" />
+		<setting id="cleanprofile" label="30329" type="text" default="Master user" visible="true" />
+		<setting id="xxxon" label="30315" type="action" action="RunScript(special://home/addons/plugin.program.openeleq.tools/resources/lib/xxx.py,xxxon)" />
+		<setting id="xxxoff" label="30316" type="action" action="RunScript(special://home/addons/plugin.program.openeleq.tools/resources/lib/xxx.py,xxxoff)" />
+		<setting id="xxxupdate" label="30323" type="action" action="RunScript(special://home/addons/plugin.program.openeleq.tools/resources/lib/xxx.py,xxxupdate)" />
+		<setting id="skinreset" label="30320" type="action" action="RunScript(special://home/addons/plugin.program.openeleq.tools/resources/lib/xxx.py,xxxreset)" />
+	</category>
+</settings>
