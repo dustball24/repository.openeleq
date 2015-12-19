@@ -13,13 +13,13 @@ ADDON_ID = ADDON.getAddonInfo('id')
 ADDON_ICON = ADDON.getAddonInfo('icon')
 ADDON_NAME = ADDON.getAddonInfo('name')
 ADDON_PATH = ADDON.getAddonInfo('path').decode("utf-8")
-INFO_DIALOG_FILE_CLASSIC = u'script-%s-DialogVideoInfo.xml' % (ADDON_NAME)
-LIST_DIALOG_FILE_CLASSIC = u'script-%s-VideoList.xml' % (ADDON_NAME)
-ACTOR_DIALOG_FILE_CLASSIC = u'script-%s-DialogInfo.xml' % (ADDON_NAME)
+INFO_DIALOG_FILE_CLASSIC = u'%s-DialogVideoInfo.xml' % (ADDON_ID)
+LIST_DIALOG_FILE_CLASSIC = u'%s-VideoList.xml' % (ADDON_ID)
+ACTOR_DIALOG_FILE_CLASSIC = u'%s-DialogInfo.xml' % (ADDON_ID)
 if SETTING("force_native_layout") == "true":
-    INFO_DIALOG_FILE = u'script-%s-DialogVideoInfo-classic.xml' % (ADDON_NAME)
-    LIST_DIALOG_FILE = u'script-%s-VideoList-classic.xml' % (ADDON_NAME)
-    ACTOR_DIALOG_FILE = u'script-%s-DialogInfo-classic.xml' % (ADDON_NAME)
+    INFO_DIALOG_FILE = u'%s-DialogVideoInfo-classic.xml' % (ADDON_ID)
+    LIST_DIALOG_FILE = u'%s-VideoList-classic.xml' % (ADDON_ID)
+    ACTOR_DIALOG_FILE = u'%s-DialogInfo-classic.xml' % (ADDON_ID)
     path = os.path.join(ADDON_PATH, "resources", "skins", "Default", "1080i")
     if not xbmcvfs.exists(os.path.join(path, INFO_DIALOG_FILE)):
         xbmcvfs.copy(strSource=os.path.join(path, INFO_DIALOG_FILE_CLASSIC),
@@ -224,7 +224,7 @@ class WindowManager(object):
         else:
             color = "FFFFFFFF"
         youtube_class = DialogYoutubeList.get_youtube_window(WindowXML)
-        dialog = youtube_class(u'script-%s-YoutubeList.xml' % ADDON_NAME, ADDON_PATH,
+        dialog = youtube_class(u'%s-YoutubeList.xml' % ADDON_ID, ADDON_PATH,
                                search_str=search_str,
                                color=color,
                                filters=filters,
@@ -240,7 +240,7 @@ class WindowManager(object):
         open slideshow dialog for single image
         """
         from dialogs import SlideShow
-        dialog = SlideShow.SlideShow(u'script-%s-SlideShow.xml' % ADDON_NAME, ADDON_PATH,
+        dialog = SlideShow.SlideShow(u'%s-SlideShow.xml' % ADDON_ID, ADDON_PATH,
                                      listitems=listitems,
                                      index=index)
         dialog.doModal()

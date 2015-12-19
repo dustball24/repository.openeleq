@@ -1,9 +1,15 @@
+v4.1.3
+[COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR]
+- Fixed: incompatibility with Helix
+- Fixed: now works on skins with built-in xml for extended info
+- Fixed: posters on rottentomatoes
+
 v4.1.2
 [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR]
 - Added "Add/Play"-button (will auto-return to Extended Info if video is started within 2 minutes of script close)
 - Added "AppIntegration"-button (will close Extended Info)
 - Added "Alternate Play" for Kodi-Library (based on MySubscriptions)
-- Removed studio-logos with non-ascii in filename
+- Removed studio-logos with non-ascii in filename to make it compatible with various wizards
 
 v3.1.2
 - fixes for LastFM and Youtube API
