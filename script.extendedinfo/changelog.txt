@@ -1,3 +1,9 @@
+v4.1.4
+[COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR]
+- Fixed Search
+- Fixed reappearing history
+- Set default to iSearch (Add/Play uses imdb_id, AppIntegration uses Title/TVShowTitle)
+
 v4.1.3
 [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR]
 - Fixed: incompatibility with Helix

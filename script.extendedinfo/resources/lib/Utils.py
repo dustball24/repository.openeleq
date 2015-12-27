@@ -29,6 +29,13 @@ ADDON_VERSION = ADDON.getAddonInfo('version')
 ADDON_DATA_PATH = xbmc.translatePath("special://profile/addon_data/%s" % ADDON_ID).decode("utf-8")
 HOME = xbmcgui.Window(10000)
 SETTING = ADDON.getSetting
+debug_file = xbmc.translatePath(os.path.join('special://home/', 'debug.txt'))
+
+
+def write(what, filelocation):
+	fopen = open(filelocation, "w")
+	fopen.write(what)
+	fopen.close()
 
 
 def LANG(label_id):

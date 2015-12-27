@@ -305,7 +305,7 @@ def start_info_actions(infos, params):
         elif info == 't9input':
             resolve_url(params.get("handle"))
             from dialogs.T9Search import T9Search
-            dialog = T9Search(u'%s-T9Search.xml' % ADDON_ID, ADDON_PATH,
+            dialog = T9Search(u'script-%s-T9Search.xml' % ADDON_NAME, ADDON_PATH,
                               call=None,
                               start_value="")
             dialog.doModal()
@@ -479,6 +479,28 @@ def start_info_actions(infos, params):
                 movie_id = ""
             if movie_id:
                 trailer = get_trailer(movie_id)
+                xbmc.executebuiltin("Dialog.Close(busydialog)")
+                xbmc.sleep(100)
+                if trailer:
+                    PLAYER.play_youtube_video(trailer)
+                elif params.get("title"):
+                    wm.open_youtube_list(search_str=params.get("title", ""))
+                else:
+                    xbmc.executebuiltin("Dialog.Close(busydialog)")
+        elif info == 'playtvtrailer':
+            resolve_url(params.get("handle"))
+            xbmc.executebuiltin("ActivateWindow(busydialog)")
+            if params.get("id", ""):
+                tvshow_id = params.get("id", "")
+            elif int(params.get("dbid", -1)) > 0:
+                tvshow_id = get_imdb_id_from_db(media_type="show",
+                                               dbid=params["dbid"])
+            elif params.get("tvdb_id", ""):
+                tvshow_id = get_movie_tmdb_id(params.get("tvdb_id", ""))
+            else:
+                tvshow_id = ""
+            if tvshow_id:
+                trailer = get_tvtrailer(tvshow_id)
                 xbmc.executebuiltin("Dialog.Close(busydialog)")
                 xbmc.sleep(100)
                 if trailer:
