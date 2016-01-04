@@ -23,6 +23,23 @@
   </extension>
 </addon>
 
+<addon id="plugin.video.kmediatorrent" name="KMediaTorrent" version="24.3.8" provider-name="jmarth, EPiC TiM -4- XvBMC">
+    <requires>
+        <import addon="xbmc.python" version="2.14.0"/>
+        <import addon="script.module.requests" version="2.3.5"/>
+        <import addon="script.module.html5lib" version="0.999.0" optional="false"/>
+        <import addon="script.module.beautifulsoup4" version="4.3.2"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="addon.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <summary>Torrent streaming for KODI/XBMC</summary>
+        <description>Watch torrents directly from KODI/XBMC, without waiting</description>
+    </extension>
+</addon>
+
 <addon id="repository.openeleq"
 		name="[COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR] Add-ons"
 		version="2.0.0"
