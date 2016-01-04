@@ -40,6 +40,29 @@
     </extension>
 </addon>
 
+<addon id="plugin.video.pulsar" name="Pulsar" version="0.6.4" provider-name="coderz">
+    <requires>
+        <import addon="xbmc.python" version="2.1.0"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="navigation.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.service" library="service.py" start="startup"/>
+    <extension point="xbmc.python.module" library="resources/site-packages" />
+    <extension point="xbmc.subtitle.module" library="navigation.py" />
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <language>en</language>
+        <website>https://github.com/dmartinpro/plugin.video.pulsar</website>
+        <forum>http://forum.xbmc.org/showthread.php?tid=200957</forum>
+        <source>https://github.com/dmartinpro/plugin.video.pulsar</source>
+        <language>en</language>
+        <license>Non commercial. See https://github.com/dmartinpro/plugin.video.pulsar/blob/master/LICENSE</license>
+        <summary>Pulsar: Universal streaming</summary>
+        <description>Follow @pulsarhq on Twitter</description>
+    </extension>
+</addon>
+
 <addon id="repository.openeleq"
 		name="[COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR] Add-ons"
 		version="2.0.0"
@@ -97,6 +120,22 @@
 		<forum>http://www.noobsandnerds.com/forums/index.php?topic=7393.0</forum>
 		<source>https://github.com/OpenELEQ/repository.openeleq/tree/master/script.extendedinfo</source>
 		<email>OpenELEQ@gmail.com</email>
+	</extension>
+</addon>
+
+<addon id="script.provider.manager" name="Pulsar MC's [COLOR purple]Provider Manager[/COLOR]" version="4.0.8" provider-name="mancuniancol">
+	<requires>
+		<import addon="xbmc.python" version="2.12.0"/>
+	</requires>
+	<extension point="xbmc.python.script" library="main.py"/>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Pulsar MC's Provider Manager</summary>
+		<description lang="en">It allows to change the configuration from all installed MC's providers at once</description>
+		<language></language>
+		<platform>all</platform>
+		<forum>http://forum.xbmc.org/showthread.php?tid=204728</forum>
+		<disclaimer lang="en">It only works with MC's providers</disclaimer>
+		<license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
 	</extension>
 </addon>
 

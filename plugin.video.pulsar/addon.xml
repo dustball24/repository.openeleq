@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.video.pulsar" name="Pulsar" version="0.6.4" provider-name="coderz">
+    <requires>
+        <import addon="xbmc.python" version="2.1.0"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="navigation.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.service" library="service.py" start="startup"/>
+    <extension point="xbmc.python.module" library="resources/site-packages" />
+    <extension point="xbmc.subtitle.module" library="navigation.py" />
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <language>en</language>
+        <website>https://github.com/dmartinpro/plugin.video.pulsar</website>
+        <forum>http://forum.xbmc.org/showthread.php?tid=200957</forum>
+        <source>https://github.com/dmartinpro/plugin.video.pulsar</source>
+        <language>en</language>
+        <license>Non commercial. See https://github.com/dmartinpro/plugin.video.pulsar/blob/master/LICENSE</license>
+        <summary>Pulsar: Universal streaming</summary>
+        <description>Follow @pulsarhq on Twitter</description>
+    </extension>
+</addon>
