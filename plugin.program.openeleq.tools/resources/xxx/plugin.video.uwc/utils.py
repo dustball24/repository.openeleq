@@ -27,7 +27,7 @@ __scriptname__ = "Ultimate Whitecream"
 __author__ = "mortael"
 __scriptid__ = "plugin.video.uwc"
 __credits__ = "mortael, Fr33m1nd, anton40"
-__version__ = "1.0.64"
+__version__ = "1.0.69"
 
 USER_AGENT = 'Mozilla/5.0 (Windows; U; Windows NT 5.1; en-GB; rv:1.9.0.3) Gecko/2008092417 Firefox/3.0.3'
 
@@ -240,10 +240,12 @@ def playvideo(videosource, name, download=None, url=None):
             videourl = decodeOpenLoad(openloadsrc)
         except:
             dialog.ok('Oh oh','Couldn\'t find playable OpenLoad link')
+            return
     elif vidhost == 'Streamin':
         progress.update( 40, "", "Loading Streamin", "" )
-        streaminurl = re.compile('<iframe.*?src="(http://streamin\.to[^"]+)"', re.DOTALL | re.IGNORECASE).findall(videosource)
-        streaminsrc = getHtml2(streaminurl[0])
+        streaminurl = re.compile(r"//(?:www\.)?streamin\.to/(?:embed-)?([0-9a-zA-Z]+)", re.DOTALL | re.IGNORECASE).findall(videosource)
+        streaminurl = 'http://streamin.to/embed-%s-670x400.html' % streaminurl[0]
+        streaminsrc = getHtml2(streaminurl)
         videohash = re.compile('h=([^"]+)', re.DOTALL | re.IGNORECASE).findall(streaminsrc)
         videourl = re.compile('image: "(http://[^/]+/)', re.DOTALL | re.IGNORECASE).findall(streaminsrc)
         progress.update( 80, "", "Getting video file from Streamin", "" )
@@ -292,7 +294,10 @@ def getHtml(url, referer, hdr=None, NoCookie=None):
     response = urlopen(req, timeout=60)
     data = response.read()
     if not NoCookie:
-        cj.save(cookiePath)
+        # Cope with problematic timestamp values on RPi on OpenElec 4.2.1
+        try:
+            cj.save(cookiePath)
+        except: pass
     response.close()
     return data
 
@@ -415,7 +420,7 @@ def decodeOpenLoad(html):
     decodestring = decode(decodestring)
     decodestring = decodestring.replace("\\/","/")
     
-    videourl = re.search(r'vr="([^"]+)', decodestring, re.DOTALL | re.IGNORECASE).group(1)
+    videourl = re.search(r'vr\s?=\s?"([^"]+)', decodestring, re.DOTALL | re.IGNORECASE).group(1)
     return videourl
 
 def decode(encoded):

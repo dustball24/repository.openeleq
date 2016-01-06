@@ -20,7 +20,7 @@
 title = 'Chaturbate'
 image = 'chaturbate-icon.png'
 art = 'chaturbate-fanart.png'
-order = 10
+order = 11
 
 
 class Site:

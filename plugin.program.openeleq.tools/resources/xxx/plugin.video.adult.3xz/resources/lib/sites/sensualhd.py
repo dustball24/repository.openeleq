@@ -190,7 +190,7 @@ class Site:
 
         elif mode == 'play':
             html = a.get_page(params['url'])
-            soup = BeautifulSoup(html, parseOnlyThese=SoupStrainer('object', {'id': re.compile('flashplayer.+')}))
+            soup = BeautifulSoup(html, parseOnlyThese=SoupStrainer('body'))
             item = ''
             item_list = []
             if soup:
@@ -209,24 +209,34 @@ class Site:
                         _dict = xbmcdict.copy()
                         _dict['url'] = item
                         item_list.extend([_dict])
-            soup = BeautifulSoup(html, parseOnlyThese=SoupStrainer('video'))
-            item = ''
-            if soup:
-                for item in soup.findAll('source'):
-                    src = item.get('src')
-                    if src:
-                        xbmcdict = XBMCDict(0).update(params)
-                        if item and ('..' not in src):
-                            _dict = xbmcdict.copy()
-                            try:
-                                _dict['src_title'] = item.get('data-res') + 'p'
-                            except:
-                                pass
-                            _dict['url'] = src
-                            item_list.extend([_dict])
-            soup = BeautifulSoup(html, parseOnlyThese=SoupStrainer('div', {'class': 'videoWrapper player'}))
-            item = ''
-            if soup:
+                item = ''
+                for item in soup.findAll('video'):
+                    for source in soup.findAll('source'):
+                        src = source.get('src')
+                        if src:
+                            xbmcdict = XBMCDict(0).update(params)
+                            if item and ('..' not in src):
+                                _dict = xbmcdict.copy()
+                                try:
+                                    _dict['src_title'] = source.get('data-res') + 'p'
+                                except:
+                                    pass
+                                _dict['url'] = src
+                                item_list.extend([_dict])
+                    try:
+                        src = item.get('src')
+                        if src:
+                            xbmcdict = XBMCDict(0).update(params)
+                            if item and ('..' not in src):
+                                _dict = xbmcdict.copy()
+                                try:
+                                    _dict['src_title'] = source.get('data-res') + 'p'
+                                except:
+                                    pass
+                                _dict['url'] = src
+                                item_list.extend([_dict])
+                    except:
+                        pass
                 for script in soup.findAll('script'):
                     item = ''
                     if script.get('src'):
@@ -255,25 +265,7 @@ class Site:
                             _dict = xbmcdict.copy()
                             _dict['url'] = item
                             item_list.extend([_dict])
-            soup = BeautifulSoup(html,
-                                 parseOnlyThese=SoupStrainer('div', {'class': re.compile('player player-small.*')}))
-            item = ''
-            if soup:
-                for iframe in soup.findAll('iframe'):
-                    item = ''
-                    if iframe.get('src'):
-                        if 'http://videomega.tv/validatehash.php' in iframe['src']:
-                            item = iframe['src']
-                        elif 'ref=' in iframe.get('src'):
-                            temp = re.search('.*ref=[\'"](.+?)[\'"]', iframe.get('src'))
-                            if temp: item = 'http://videomega.tv/iframe.php?ref=' + temp.group(1)
-                        else:
-                            item = iframe.get('src')
-                        xbmcdict = XBMCDict(0).update(params)
-                        if item:
-                            _dict = xbmcdict.copy()
-                            _dict['url'] = item
-                            item_list.extend([_dict])
+
             if item_list:
                 from playback import Playback
                 Playback().choose_sources(item_list)

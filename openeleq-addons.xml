@@ -23,7 +23,7 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.kmediatorrent" name="KMediaTorrent" version="24.3.8" provider-name="jmarth, EPiC TiM -4- XvBMC">
+<addon id="plugin.video.kmediatorrent" name="KMediaTorrent" version="24.3.9" provider-name="jmarth, [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR], EPiC TiM -4- XvBMC">
     <requires>
         <import addon="xbmc.python" version="2.14.0"/>
         <import addon="script.module.requests" version="2.3.5"/>
@@ -35,8 +35,9 @@
     </extension>
     <extension point="xbmc.addon.metadata">
         <platform>all</platform>
-        <summary>Torrent streaming for KODI/XBMC</summary>
-        <description>Watch torrents directly from KODI/XBMC, without waiting</description>
+        <summary>Torrent streaming
+        for KODI/XBMC</summary>
+        <description>Watch torrents directly from KODI/XBMC, without waiting. TiM-4-XvBMC</description>
     </extension>
 </addon>
 
@@ -121,6 +122,109 @@
 		<source>https://github.com/OpenELEQ/repository.openeleq/tree/master/script.extendedinfo</source>
 		<email>OpenELEQ@gmail.com</email>
 	</extension>
+</addon>
+
+<addon id='script.module.libtorrent' version='1.0.7' name='LibTorrent' provider-name='DiMartino, srg70, RussakHH, aisman'>
+  <requires>
+    <import addon='xbmc.python' version='2.1.0'/>
+  </requires>
+  <extension point="xbmc.python.script" library="default.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point='xbmc.addon.metadata'>
+    <platform>all</platform>
+    <summary>LibTorrent</summary>
+  </extension>
+  <extension point='xbmc.python.module'/>
+</addon>
+
+<addon id="script.module.mctools" name="common tools mc" version="1.3.0" provider-name="mancuniancol">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0" />
+    <import addon="script.module.beautifulsoup4" optional="false"/>
+    <import addon="script.module.html5lib" optional="false"/>
+    <import addon="script.module.requests" optional="false"/>
+    <import addon="script.module.feedparser" optional="false"/>
+    <import addon="script.module.xbmcswift2" optional="false"/>
+    <import addon="script.module.simplejson" optional="false"/>
+    <import addon="script.module.metahandler" optional="false"/>
+    <import addon="script.module.httplib2" optional="false"/>
+  </requires>
+  <extension point="xbmc.python.module" library="lib" />
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">Collection of common tools for addons</summary>
+    <description lang="en">Collection of tools from different authors.  All the credit should be given to them</description>
+    <disclaimer lang="en"></disclaimer>
+    <language></language>
+    <platform>all</platform>
+    <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+    <forum></forum>
+    <website></website>
+    <email></email>
+    <source></source>
+  </extension>
+</addon>
+
+<addon id="script.module.metahandler"
+     name="metahandler"
+     version="2.9.0"
+     provider-name="Eldorado">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0" />
+    <import addon="script.module.simplejson" version="3.3.0"/>
+    <import addon="script.module.addon.common" version="2.0.0"/>
+    <import addon="script.module.myconnpy" version="1.1.6"/>
+  </requires>
+  <extension point="xbmc.python.module" library="lib" />
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Downloads Artwork for TV shows, Movies and Music videos for addons and stores them in a local SQLITE database</summary>
+    <description lang="en">Queries, stores, and returns metadata for TV shows, Movies and Musicvideos. [CR]Sources:[CR]www.thetvdb.com[CR]www.themoviedb.org[CR]www.imdb.com</description>
+    <disclaimer lang="en"></disclaimer>
+    <language></language>
+    <platform>all</platform>
+    <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+    <forum></forum>
+    <website></website>
+    <email></email>
+    <source></source>
+  </extension>
+</addon>
+
+<addon id="script.module.six"
+       name="six"
+       version="1.9.0"
+       provider-name="gutworth">
+  <requires>
+    <import addon="xbmc.python"
+    		version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.module"
+             library="lib" />
+  <extension point="xbmc.addon.metadata">
+    <summary>Python 2 and 3 compatibility utilities.</summary>
+    <description>Six is a Python 2 and 3 compatibility library. It provides utility functions for smoothing over the differences between the Python versions with the goal of writing Python code that is compatible on both Python versions. See the documentation for more information on what is provided.</description>
+    <platform>all</platform>
+    <license>MIT</license>
+    <source>https://pypi.python.org/pypi/six</source>
+    <website>https://pypi.python.org/pypi/six</website>
+  </extension>
+</addon>
+
+<addon id="script.module.torrent2http" name="torrent2http" version="0.1.3" provider-name="anteo">
+    <requires>
+        <import addon="xbmc.python" version="2.14.0"/>
+    </requires>
+    <extension point="xbmc.python.module" library="lib"/>
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <language>en</language>
+        <summary lang="en">Downloads torrents and share it over HTTP</summary>
+        <summary lang="ru">Загружает торренты и раздает их по HTTP</summary>
+        <description lang="ru">Обеспечивает последовательную (sequential) загрузку торрентов для потокового онлайн просмотра через HTTP. Основан на библиотеке LibTorrent.</description>
+        <description lang="en">Provides sequential torrent downloading for online streaming video and other media over HTTP.</description>
+        <email>anteo@academ.org</email>
+    </extension>
 </addon>
 
 <addon id="script.provider.manager" name="Pulsar MC's [COLOR purple]Provider Manager[/COLOR]" version="4.0.8" provider-name="mancuniancol">

@@ -1,3 +1,31 @@
+[B]Version 1.0.69[/B]
+Fixed: HClips channel listing
+Changed: Streamin.to url handling
+Added: Chaturbate, remove cached images from textures database. Not advised, but some people requested it.
+
+
+[B]Version 1.0.68[/B]
+Fixed: Openload
+Fixed: ParadiseHill going to page 11
+Fixed: Hdclips Next page channels
+
+[B]Version 1.0.67[/B]
+Added: Pornhub (anton40)
+Fixed: Watchxxxfree
+Fixed: Some other small fixes from anton40
+
+
+[B]Version 1.0.66[/B]
+Fixed: Freeomovie (I should test the pull requests before releasing)
+
+
+[B]Version 1.0.65[/B]
+Added: Hclips (anton40)
+Added: Freeomovie (anton40)
+Fixed: porn00
+Changed: temporary disabled watchxxxfree and beeg until fixed
+
+
 [B]Version 1.0.64[/B]
 Fixed: Videomega videos
 Fixed: Videomegaporn video listing

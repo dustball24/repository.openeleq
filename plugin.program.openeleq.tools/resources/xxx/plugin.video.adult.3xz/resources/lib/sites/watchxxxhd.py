@@ -77,7 +77,7 @@ class Site:
                                 img = item.find('img')
                                 if img:
                                     try:
-                                        img = img.get('data-lazy-src')
+                                        img = img.get('data-src')
                                     except:
                                         try:
                                             img = img.get('src')
@@ -158,7 +158,7 @@ class Site:
                             img = item.find('img')
                             if img:
                                 try:
-                                    img = img.get('data-lazy-src')
+                                    img = img.get('data-src')
                                 except:
                                     try:
                                         img = img.get('src')
@@ -230,8 +230,8 @@ class Site:
                 if soup.find('iframe', src=True):
                     item = ''
                     for iframe in soup.findAll('iframe', src=True):
-                        if iframe.get('data-lazy-src'):
-                            item = iframe.get('data-lazy-src')
+                        if iframe.get('data-src'):
+                            item = iframe.get('data-src')
                             r = re.search('.+old=(.+)$', item)
                             if r:
                                 item = r.group(1)
