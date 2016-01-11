@@ -1,0 +1,18 @@
+====================================================================================================
+# Content:
+https://github.com/OpenELEQ/repository.openeleq/tree/master/keywords/iSTREAM/iSTREAM.list
+https://raw.github.com/OpenELEQ/repository.openeleq/master/keywords/iSTREAM/iSTREAM.list
+# QR code:
+https://github.com/OpenELEQ/repository.openeleq/tree/master/keywords/iSTREAM/iSTREAM.jpg
+https://raw.github.com/OpenELEQ/repository.openeleq/master/keywords/iSTREAM/iSTREAM.jpg
+# Zip:
+https://github.com/OpenELEQ/repository.openeleq/tree/master/keywords/iSTREAM/iSTREAM.zip
+https://raw.github.com/OpenELEQ/repository.openeleq/master/keywords/iSTREAM/iSTREAM.zip
+# This file:
+https://github.com/OpenELEQ/repository.openeleq/tree/master/keywords/iSTREAM/iSTREAM.txt
+https://raw.github.com/OpenELEQ/repository.openeleq/master/keywords/iSTREAM/iSTREAM.txt
+====================================================================================================
+## All OpenELEQ's NaN keywords: ##
+https://github.com/OpenELEQ/repository.openeleq/tree/master/keywords/iSTREAM/iSTREAM.txt
+https://raw.github.com/OpenELEQ/repository.openeleq/master/keywords/iSTREAM/iSTREAM.txt
+====================================================================================================
