@@ -4,34 +4,21 @@
 What it is
 ----------
 Pulsar is an torrent finding and streaming engine. It doesn't go on torrent websites for legal reasons. However, it calls specially crafted addons (called providers) that are installed separately. They are normal XBMC addons, and thus can be installed/updated/distributed just like any other addon.
-This project is a fork of the well known, but no longer maintained Pulsar project from [steeve](https://github.com/steeve).
-Big thanks for his great job.
+
 
 Supported platforms
 -------------------
-- (Windows)
-- (Linux 32/64 bits (starting Ubuntu 12.04))
+- Windows
+- Linux 32/64 bits (starting Ubuntu 12.04)
 - Linux ARM (Raspberry Pi, Cubox i4pro etc...)
 - OS X 64 bits
-- (Android ARM (4.x))
+- Android ARM (4.x)
 
-Build
------
-If you want to build this plugin, feel free.
-First, build pulsar daemon (see pulsar project for more information)
-Then, create a symlink, like this:
-```
-ln -s $GOPATH/src/github.com/dmartinpro/pulsar/build ./resources/bin
-```
-and build the package:
-```
-make all
-```
 
 Download
 --------
+See the [Releases](https://github.com/steeve/plugin.video.pulsar/releases) page.
 
-[First release: 0.6.2](https://www.dropbox.com/s/91654ehjswtj23w/plugin.video.pulsar-0.6.2.zip?dl=0)
 
 Installation
 ------------

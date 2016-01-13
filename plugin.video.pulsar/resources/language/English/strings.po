@@ -1,0 +1,198 @@
+# Kodi Media Center language file
+# Addon Name: Pulsar
+# Addon id: plugin.video.pulsar
+# Addon Provider: steeve
+msgid ""
+msgstr ""
+"POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: nl\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+# Settings
+
+msgctxt "#30000"
+msgid "General"
+""
+
+msgctxt "#30001"
+msgid "Download map instellen NTFS of EXT4 formaat"
+""
+
+msgctxt "#30002"
+msgid "Download houden na afspelen?"
+""
+
+msgctxt "#30003"
+msgid "Buffer grote in (MB)"
+""
+
+msgctxt "#30004"
+msgid "Max Upload snelheid in (kB/s)"
+""
+
+msgctxt "#30005"
+msgid "Max Download snelheid in (kB/s)"
+""
+
+msgctxt "#30006"
+msgid "Listen Port Min"
+""
+
+msgctxt "#30007"
+msgid "Listen Port Max"
+""
+
+msgctxt "#30008"
+msgid "Proxy"
+""
+
+msgctxt "#30009"
+msgid "SOCKS v5 Configuration"
+""
+
+msgctxt "#30010"
+msgid "Enabled"
+""
+
+msgctxt "#30011"
+msgid "Host"
+""
+
+msgctxt "#30012"
+msgid "Port"
+""
+
+msgctxt "#30013"
+msgid "Login"
+""
+
+msgctxt "#30014"
+msgid "Wachtwoord"
+""
+
+msgctxt "#30015"
+msgid "Geavanceerd"
+""
+
+msgctxt "#30016"
+msgid "Aangepast Provider Timeout"
+""
+
+msgctxt "#30017"
+msgid "Enabled (Op eigen risico)"
+""
+
+msgctxt "#30018"
+msgid "Timeout in seconde"
+""
+
+msgctxt "#30019"
+msgid "Onderhoud"
+""
+
+msgctxt "#30020"
+msgid "Delete cache"
+""
+
+msgctxt "#30021"
+msgid "20 films per pagina"
+""
+
+msgctxt "#30022"
+msgid "Zet statusbar aan (Pauze)"
+""
+
+# Interface
+
+msgctxt "#30100"
+msgid "Pulsar is vast gelopen.. wordt opnieuw opgestart"
+
+msgctxt "#30101"
+msgid "Start Kodi opnieuw op om Pulsar te gebruiken"
+""
+
+msgctxt "#30102"
+msgid "Deze addon is alleen te gebruiken met Pulsar"
+""
+
+# Pulsar daemon
+
+msgctxt "#30200"
+msgid "Cache is schoongemaakt!"
+""
+
+msgctxt "#30201"
+msgid "TV Shows zoeken"
+""
+
+msgctxt "#30202"
+msgid "Kies een stream"
+""
+
+msgctxt "#30203"
+msgid "Film informatie"
+""
+
+msgctxt "#30204"
+msgid "Geen providers kunnen vinden!"
+""
+
+msgctxt "#30205"
+msgid "Geen links gevonden"
+""
+
+msgctxt "#30206"
+msgid "Films zoeken"
+""
+
+msgctxt "#30207"
+msgid "Niet genoeg ruimte voor cache."
+""
+
+msgctxt "#30208"
+msgid "Pulsar addon is gestart"
+""
+
+msgctxt "#30209"
+msgid "Zoeken"
+""
+
+msgctxt "#30210"
+msgid "Meest Populair"
+""
+
+msgctxt "#30211"
+msgid "Toppers aller tijden"
+""
+
+msgctxt "#30212"
+msgid "Meest op gestemd"
+""
+
+msgctxt "#30213"
+msgid "IMDB Top 250"
+""
+
+msgctxt "#30214"
+msgid "Films"
+""
+
+msgctxt "#30215"
+msgid "TV Shows"
+""
+
+msgctxt "#30216"
+msgid "Plaats URL"
+""
+
+msgctxt "#30217"
+msgid "Plaats Magneet link of URL"
+""
+
+msgctxt "#30218"
+msgid "Volgende pagina"
+""
