@@ -1,8 +1,25 @@
 ====================================================================================================
 ## istream ##
 # Long url: 
-- https://raw.github.com/OpenELEQ/repository.openeleq/master/keywords/NanKeywordTotal.txt
->>>> https://github.com/OpenELEQ/repository.openeleq/tree/master/keywords/NanKeywordTotal.txt
+- https://github.com/OpenELEQ/repository.openeleq/tree/master/keywords/iSTREAM/iSTREAM.zip
+>>>> https://raw.github.com/OpenELEQ/repository.openeleq/master/keywords/iSTREAM/iSTREAM.zip
 # Description: 
-- iSTREAM complete january 2016
+- iSTREAM complete.
+- 12th january 2016.
+====================================================================================================
+## quix ##
+# Long url: 
+- https://github.com/OpenELEQ/repository.openeleq/tree/master/keywords/Quix/Quix.zip
+>>>> https://raw.github.com/OpenELEQ/repository.openeleq/master/keywords/Quix/Quix.zip
+# Description: 
+- Quix: A compact build centered around my extended info mod. Includes all compatible addons. 
+- 13th january 2016.
+====================================================================================================
+## xxx ##
+# Long url: 
+- https://github.com/OpenELEQ/repository.openeleq/tree/master/keywords/XXX/XXX.zip
+>>>> https://raw.github.com/OpenELEQ/repository.openeleq/master/keywords/XXX/XXX.zip
+# Description: 
+- All XXX-addons I could find including their repository (wherever possible).
+- 13th january 2016.
 ====================================================================================================

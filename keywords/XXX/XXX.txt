@@ -1,0 +1,20 @@
+====================================================================================================
+# Keyword:
+xxx
+# Content:
+https://github.com/OpenELEQ/repository.openeleq/tree/master/keywords/XXX/XXX.list
+https://raw.github.com/OpenELEQ/repository.openeleq/master/keywords/XXX/XXX.list
+# QR code:
+https://github.com/OpenELEQ/repository.openeleq/tree/master/keywords/XXX/XXX.jpg
+https://raw.github.com/OpenELEQ/repository.openeleq/master/keywords/XXX/XXX.jpg
+# Zip:
+https://github.com/OpenELEQ/repository.openeleq/tree/master/keywords/XXX/XXX.zip
+https://raw.github.com/OpenELEQ/repository.openeleq/master/keywords/XXX/XXX.zip
+# This file:
+https://github.com/OpenELEQ/repository.openeleq/tree/master/keywords/XXX/XXX.txt
+https://raw.github.com/OpenELEQ/repository.openeleq/master/keywords/XXX/XXX.txt
+====================================================================================================
+## All OpenELEQ's NaN keywords: ##
+https://github.com/OpenELEQ/repository.openeleq/tree/master/keywords/NanKeywordTotal.txt
+https://raw.github.com/OpenELEQ/repository.openeleq/master/keywords/NanKeywordTotal.txt
+====================================================================================================

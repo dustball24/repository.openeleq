@@ -1,4 +1,6 @@
 ====================================================================================================
+# Keyword:
+istream
 # Content:
 https://github.com/OpenELEQ/repository.openeleq/tree/master/keywords/iSTREAM/iSTREAM.list
 https://raw.github.com/OpenELEQ/repository.openeleq/master/keywords/iSTREAM/iSTREAM.list
@@ -13,6 +15,6 @@ https://github.com/OpenELEQ/repository.openeleq/tree/master/keywords/iSTREAM/iST
 https://raw.github.com/OpenELEQ/repository.openeleq/master/keywords/iSTREAM/iSTREAM.txt
 ====================================================================================================
 ## All OpenELEQ's NaN keywords: ##
-https://github.com/OpenELEQ/repository.openeleq/tree/master/keywords/iSTREAM/iSTREAM.txt
-https://raw.github.com/OpenELEQ/repository.openeleq/master/keywords/iSTREAM/iSTREAM.txt
+https://github.com/OpenELEQ/repository.openeleq/tree/master/keywords/NanKeywordTotal.txt
+https://raw.github.com/OpenELEQ/repository.openeleq/master/keywords/NanKeywordTotal.txt
 ====================================================================================================
