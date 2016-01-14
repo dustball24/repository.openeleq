@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="repository.xvbmc"
+		name="XvBMC Addon Depot"
+		version="1.0.0"
+		provider-name="XBMC Voor Beginners">
+	<extension point="xbmc.addon.repository"
+		name="XvBMC Add-on Depot">
+		<dir>
+			<info compressed="false">https://github.com/XvBMC/repository.xvbmc/raw/master/xvbmc-addons.xml</info>
+			<checksum>https://github.com/XvBMC/repository.xvbmc/raw/master/xvbmc-addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.github.com/XvBMC/repository.xvbmc/master/zips/</datadir>
+		</dir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">XvBMC Addon Repository</summary>
+		<summary lang="nl">XvBMC Addon Depot</summary>
+		<description lang="en">Description</description>
+		<description lang="nl">Omschrijving</description>
+		<disclaimer lang="en">Disclaimer</disclaimer>
+		<disclaimer lang="nl">Vrijwaring</disclaimer>
+		<platform>all</platform>
+	</extension>
+</addon>
