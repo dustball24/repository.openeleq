@@ -1,3 +1,8 @@
+v4.1.5
+[COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR]
+- Synced with official github
+- Minor bugfixes in preparation of expanded addon compatibility list
+
 v4.1.4
 [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR]
 - Fixed Search

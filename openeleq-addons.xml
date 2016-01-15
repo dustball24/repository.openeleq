@@ -69,7 +69,7 @@
 	</extension>
 </addon>
 
-<addon id="script.extendedinfo" name="ExtendedInfo Script Mod" version="4.1.4" provider-name="Original work by phil65, modded by [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR]">
+<addon id="script.extendedinfo" name="ExtendedInfo Script Mod" version="4.1.5" provider-name="Original work by phil65, modded by [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR]">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0"/>
 		<import addon="script.module.pil" version="1.1.7"/>

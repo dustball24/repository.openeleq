@@ -813,3 +813,107 @@ msgstr ""
 msgctxt "#32198"
 msgid "Which Episode?"
 msgstr ""
+
+msgctxt "#32199"
+msgid "In Theatres"
+msgstr ""
+
+msgctxt "#32200"
+msgid "In Theatres"
+msgstr ""
+
+msgctxt "#32201"
+msgid "Opening"
+msgstr ""
+
+msgctxt "#32202"
+msgid "Box Office"
+msgstr ""
+
+msgctxt "#32203"
+msgid "Top Rentals"
+msgstr ""
+
+msgctxt "#32204"
+msgid "Current DVD's"
+msgstr ""
+
+msgctxt "#32205"
+msgid "New DVD's"
+msgstr ""
+
+msgctxt "#32206"
+msgid "Upcoming DVD's"
+msgstr ""
+
+msgctxt "#32207"
+msgid "In Cinemas"
+msgstr ""
+
+msgctxt "#32208"
+msgid "Upcoming Movies"
+msgstr ""
+
+msgctxt "#32209"
+msgid "Popular Movies"
+msgstr ""
+
+msgctxt "#32210"
+msgid "Top Rated Movies"
+msgstr ""
+
+msgctxt "#32211"
+msgid "Popular TV Shows"
+msgstr ""
+
+msgctxt "#32212"
+msgid "Top Rated Shows"
+msgstr ""
+
+msgctxt "#32213"
+msgid "On Air"
+msgstr ""
+
+msgctxt "#32214"
+msgid "Airing Today"
+msgstr ""
+
+msgctxt "#32215"
+msgid "Trending Movies"
+msgstr ""
+
+msgctxt "#32216"
+msgid "Trending Shows"
+msgstr ""
+
+msgctxt "#32217"
+msgid "Airing Shows"
+msgstr ""
+
+msgctxt "#32218"
+msgid "Premiering Shows"
+msgstr ""
+
+msgctxt "#32219"
+msgid "Top Artists"
+msgstr ""
+
+msgctxt "#32220"
+msgid "Hyped Artists"
+msgstr ""
+
+msgctxt "#32221"
+msgid "XKCD"
+msgstr ""
+
+msgctxt "#32222"
+msgid "Cyanide & Happiness"
+msgstr ""
+
+msgctxt "#32223"
+msgid "Daily Babe"
+msgstr ""
+
+msgctxt "#32224"
+msgid "Daily Babes"
+msgstr ""
