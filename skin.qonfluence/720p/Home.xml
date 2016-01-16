@@ -808,6 +808,13 @@
 					<visible>Container(9000).HasFocus(24)</visible>
 					<include>CustomSubMenu10</include> <!-- Buttons for the grouplist -->
 				</control>
+				<control type="grouplist" id="9031">
+					<include>HomeSubMenuCommonValues</include>
+					<onleft>9031</onleft>
+					<onright>9031</onright>
+					<visible>Container(9000).HasFocus(14)</visible>
+					<include>HomeSubMenuMusicVideos</include> <!-- Buttons for the grouplist -->
+				</control>
 				<control type="grouplist" id="9010">
 					<include>HomeSubMenuCommonValues</include>
 					<onleft>9010</onleft>
@@ -1233,6 +1240,7 @@
 				<onclick>Skin.Reset(DeveloperMode)</onclick>
 				<onclick>Skin.Reset(EnableDeveloper)</onclick>
 				<onclick>Skin.Reset(KidsProfile)</onclick>
+				<onclick condition="!Skin.HasSetting(NoReloadSkin)">ReloadSkin()</onclick>
                 <texturefocus colordiffuse="$VAR[ColorFO1]" border="5">floor_buttonFOnew.png</texturefocus>
                 <texturenofocus colordiffuse="$VAR[Color1]" border="5">floor_buttonnew.png</texturenofocus>
 				<onleft>20</onleft>
@@ -1260,6 +1268,7 @@
 				<label>31003</label>
 				<font>-</font>
 				<onclick>ActivateWindow(SkinSettings)</onclick>
+				<onclick condition="!Skin.HasSetting(NoReloadSkin)">ReloadSkin()</onclick>
                 <texturefocus colordiffuse="$VAR[ColorFO1]" border="5">floor_buttonFOnew.png</texturefocus>
                 <texturenofocus colordiffuse="$VAR[Color1]" border="5">floor_buttonnew.png</texturenofocus>
 				<onleft>905</onleft>
@@ -1287,6 +1296,7 @@
 				<label>1036</label>
 				<font>-</font>
 				<onclick>ActivateWindow(1100)</onclick>
+				<onclick condition="!Skin.HasSetting(NoReloadSkin)">ReloadSkin()</onclick>
                 <texturefocus colordiffuse="$VAR[ColorFO1]" border="5">floor_buttonFOnew.png</texturefocus>
                 <texturenofocus colordiffuse="$VAR[Color1]" border="5">floor_buttonnew.png</texturenofocus>
 				<onleft>906</onleft>
@@ -1314,6 +1324,7 @@
 				<label>31003</label>
 				<font>-</font>
 				<onclick>RunPlugin(plugin://plugin.program.openeleq.tools/?mode=update)</onclick>
+				<onclick condition="!Skin.HasSetting(NoReloadSkin)">ReloadSkin()</onclick>
 				<!--<onclick>ActivateWindow(1120)</onclick>-->
                 <texturefocus colordiffuse="$VAR[ColorFO1]" border="5">floor_buttonFOnew.png</texturefocus>
                 <texturenofocus colordiffuse="$VAR[Color1]" border="5">floor_buttonnew.png</texturenofocus>
@@ -1321,7 +1332,7 @@
 				<onright>21</onright>
 				<onup>9002</onup>
 				<ondown>9003</ondown>
-				<visible>!Skin.HasSetting(SkinMod) + !Skin.HasSetting(KidsProfile)</visible>
+				<visible>!Skin.HasSetting(SkinMod) + !Skin.HasSetting(KidsProfile) + System.HasAddon(plugin.program.openeleq.tools)</visible>
 			</control>
 			<control type="image">
 				<description>PVR Manager Icon</description>
@@ -1331,7 +1342,35 @@
 				<height>35</height>
 				<aspectratio>keep</aspectratio>
 				<texture>04PVRmanager.png</texture>
-				<visible>!Skin.HasSetting(SkinMod) + !Skin.HasSetting(KidsProfile)</visible>
+				<visible>!Skin.HasSetting(SkinMod) + !Skin.HasSetting(KidsProfile) + System.HasAddon(plugin.program.openeleq.tools)</visible>
+			</control>
+			<control type="button" id="908">
+				<description>PVR Manager push button</description>
+				<left>1085</left>
+				<top>0</top>
+				<width>45</width>
+				<height>45</height>
+				<label>31003</label>
+				<font>-</font>
+				<onclick>RunScript(script.rss.editor)</onclick>
+				<onclick condition="!Skin.HasSetting(NoReloadSkin)">ReloadSkin()</onclick>
+				<!--<onclick>ActivateWindow(1120)</onclick>-->
+                <texturefocus colordiffuse="$VAR[ColorFO1]" border="5">floor_buttonFOnew.png</texturefocus>
+                <texturenofocus colordiffuse="$VAR[Color1]" border="5">floor_buttonnew.png</texturenofocus>
+				<onleft>907</onleft>
+				<onright>21</onright>
+				<onup>9002</onup>
+				<ondown>9003</ondown>
+				<visible>!Skin.HasSetting(SkinMod) + !Skin.HasSetting(KidsProfile) + !System.HasAddon(plugin.program.openeleq.tools)</visible>
+			</control>
+			<control type="image">
+				<description>RSS background</description>
+				<left>1090</left>
+				<top>5</top>
+				<width>35</width>
+				<height>35</height>
+				<texture>icon-rss.png</texture>
+				<visible>!Skin.HasSetting(SkinMod) + !Skin.HasSetting(KidsProfile) + !System.HasAddon(plugin.program.openeleq.tools)</visible>
 			</control>
 			<control type="button" id="21">
 				<description>Favourites push button</description>
@@ -1342,6 +1381,7 @@
 				<label>1036</label>
 				<font>-</font>
 				<onclick>ActivateWindow(Favourites)</onclick>
+				<onclick condition="!Skin.HasSetting(NoReloadSkin)">ReloadSkin()</onclick>
                 <texturefocus colordiffuse="$VAR[ColorFO1]" border="5">floor_buttonFOnew.png</texturefocus>
                 <texturenofocus colordiffuse="$VAR[Color1]" border="5">floor_buttonnew.png</texturenofocus>
 				<onleft>908</onleft>
@@ -1370,6 +1410,7 @@
 				<font>-</font>
 				<onclick condition="Skin.HasSetting(XXX)">RunScript(special://home/addons/plugin.program.openeleq.tools/resources/lib/xxx.py,xxxoff)</onclick>
 				<onclick condition="!Skin.HasSetting(XXX)">ActivateWindow(ShutdownMenu)</onclick>
+				<onclick condition="!Skin.HasSetting(NoReloadSkin)">ReloadSkin()</onclick>
                 <texturefocus colordiffuse="$VAR[ColorFO1]" border="5">floor_buttonFOnew.png</texturefocus>
                 <texturenofocus colordiffuse="$VAR[Color1]" border="5">floor_buttonnew.png</texturenofocus>
 				<onleft>21</onleft>

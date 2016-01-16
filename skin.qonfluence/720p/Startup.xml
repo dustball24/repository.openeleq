@@ -2,6 +2,7 @@
 <window>
 	<defaultcontrol always="true">10</defaultcontrol>
 	<allowoverlay>no</allowoverlay>
+	<onload>PlayMedia(special://home/media/intro.mp4)</onload>
 	<controls>
 		<control type="button" id="10">
 			<description>trigger</description>
