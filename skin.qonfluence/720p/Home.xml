@@ -1241,6 +1241,7 @@
 				<onclick>Skin.Reset(EnableDeveloper)</onclick>
 				<onclick>Skin.Reset(KidsProfile)</onclick>
 				<onclick condition="!Skin.HasSetting(NoReloadSkin)">ReloadSkin()</onclick>
+				<onclick condition="!Skin.HasSetting(NoReloadSkin)">ReloadKeymaps</onclick>
                 <texturefocus colordiffuse="$VAR[ColorFO1]" border="5">floor_buttonFOnew.png</texturefocus>
                 <texturenofocus colordiffuse="$VAR[Color1]" border="5">floor_buttonnew.png</texturenofocus>
 				<onleft>20</onleft>
@@ -1269,6 +1270,7 @@
 				<font>-</font>
 				<onclick>ActivateWindow(SkinSettings)</onclick>
 				<onclick condition="!Skin.HasSetting(NoReloadSkin)">ReloadSkin()</onclick>
+				<onclick condition="!Skin.HasSetting(NoReloadSkin)">ReloadKeymaps</onclick>
                 <texturefocus colordiffuse="$VAR[ColorFO1]" border="5">floor_buttonFOnew.png</texturefocus>
                 <texturenofocus colordiffuse="$VAR[Color1]" border="5">floor_buttonnew.png</texturenofocus>
 				<onleft>905</onleft>
@@ -1297,6 +1299,7 @@
 				<font>-</font>
 				<onclick>ActivateWindow(1100)</onclick>
 				<onclick condition="!Skin.HasSetting(NoReloadSkin)">ReloadSkin()</onclick>
+				<onclick condition="!Skin.HasSetting(NoReloadSkin)">ReloadKeymaps</onclick>
                 <texturefocus colordiffuse="$VAR[ColorFO1]" border="5">floor_buttonFOnew.png</texturefocus>
                 <texturenofocus colordiffuse="$VAR[Color1]" border="5">floor_buttonnew.png</texturenofocus>
 				<onleft>906</onleft>
@@ -1325,6 +1328,7 @@
 				<font>-</font>
 				<onclick>RunPlugin(plugin://plugin.program.openeleq.tools/?mode=update)</onclick>
 				<onclick condition="!Skin.HasSetting(NoReloadSkin)">ReloadSkin()</onclick>
+				<onclick condition="!Skin.HasSetting(NoReloadSkin)">ReloadKeymaps</onclick>
 				<!--<onclick>ActivateWindow(1120)</onclick>-->
                 <texturefocus colordiffuse="$VAR[ColorFO1]" border="5">floor_buttonFOnew.png</texturefocus>
                 <texturenofocus colordiffuse="$VAR[Color1]" border="5">floor_buttonnew.png</texturenofocus>
@@ -1354,6 +1358,7 @@
 				<font>-</font>
 				<onclick>RunScript(script.rss.editor)</onclick>
 				<onclick condition="!Skin.HasSetting(NoReloadSkin)">ReloadSkin()</onclick>
+				<onclick condition="!Skin.HasSetting(NoReloadSkin)">ReloadKeymaps</onclick>
 				<!--<onclick>ActivateWindow(1120)</onclick>-->
                 <texturefocus colordiffuse="$VAR[ColorFO1]" border="5">floor_buttonFOnew.png</texturefocus>
                 <texturenofocus colordiffuse="$VAR[Color1]" border="5">floor_buttonnew.png</texturenofocus>
@@ -1382,6 +1387,7 @@
 				<font>-</font>
 				<onclick>ActivateWindow(Favourites)</onclick>
 				<onclick condition="!Skin.HasSetting(NoReloadSkin)">ReloadSkin()</onclick>
+				<onclick condition="!Skin.HasSetting(NoReloadSkin)">ReloadKeymaps</onclick>
                 <texturefocus colordiffuse="$VAR[ColorFO1]" border="5">floor_buttonFOnew.png</texturefocus>
                 <texturenofocus colordiffuse="$VAR[Color1]" border="5">floor_buttonnew.png</texturenofocus>
 				<onleft>908</onleft>
@@ -1411,6 +1417,7 @@
 				<onclick condition="Skin.HasSetting(XXX)">RunScript(special://home/addons/plugin.program.openeleq.tools/resources/lib/xxx.py,xxxoff)</onclick>
 				<onclick condition="!Skin.HasSetting(XXX)">ActivateWindow(ShutdownMenu)</onclick>
 				<onclick condition="!Skin.HasSetting(NoReloadSkin)">ReloadSkin()</onclick>
+				<onclick condition="!Skin.HasSetting(NoReloadSkin)">ReloadKeymaps</onclick>
                 <texturefocus colordiffuse="$VAR[ColorFO1]" border="5">floor_buttonFOnew.png</texturefocus>
                 <texturenofocus colordiffuse="$VAR[Color1]" border="5">floor_buttonnew.png</texturenofocus>
 				<onleft>21</onleft>
